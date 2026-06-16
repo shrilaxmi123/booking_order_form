@@ -523,122 +523,134 @@ button{
         <span class="required">*</span>
     </label>
 
-    <!-- DISCOUNT -->
-    <div class="billing-option">
-        <input
-            type="radio"
-            name="billing"
-            value="Discount"
-            onclick="showDiscountOptions(); hideAmountBox();"
-            class="package-required"
+   <!-- DISCOUNT OPTIONS -->
+<div
+    id="discountOptions"
+    style="
+        display:none;
+        margin-left:40px;
+        margin-top:10px;
+    "
+>
+
+    <!-- 2024 Discount -->
+    <div style="margin-bottom:8px;">
+        <label
+            style="
+                font-size:17px;
+                display:block;
+                margin-bottom:2px;
+            "
         >
-        Discount (%)
+            2024 Discount
+        </label>
+
+        <input
+            type="number"
+            id="discount2024"
+            placeholder="Enter 2024 Discount %"
+            min="1"
+            style="
+                width:250px;
+                border:none;
+                border-bottom:1px solid #999;
+                font-size:17px;
+                padding:4px 0;
+                outline:none;
+                background:transparent;
+            "
+        >
     </div>
 
-    <!-- DISCOUNT OPTIONS -->
-    <div
-        id="discountOptions"
-        style="
-            display:none;
-            margin-left:40px;
-            margin-top:20px;
-        "
-    >
+    <!-- 2025 Discount -->
+    <div style="margin-bottom:8px;">
+        <label
+            style="
+                font-size:17px;
+                display:block;
+                margin-bottom:2px;
+            "
+        >
+            2025 Discount
+        </label>
 
-        <!-- 2024 Discount -->
-        <div style="margin-bottom:15px;">
-            <label style="font-size:16px;">
-                2024 Discount 
-            </label>
-
-            <input
-                type="number"
-                id="discount2024"
-                placeholder="Enter 2024 Discount %"
-                min="1"
-                style="
-                    width:245px;
-                    border:none;
-                    border-bottom:1px solid #999;
-                    font-size:15px;
-                    padding:10px 0;
-                    outline:none;
-                    background:transparent;
-                "
-            >
-        </div>
-
-        <!-- 2025 Discount -->
-        <div style="margin-bottom:15px;">
-            <label style="font-size:16px;">
-                2025 Discount 
-            </label>
-
-            <input
-                type="number"
-                id="discount2025"
-                placeholder="Enter 2025 Discount %"
-                min="1"
-                style="
-                    width:245px;
-                    border:none;
-                    border-bottom:1px solid #999;
-                    font-size:15px;
-                    padding:10px 0;
-                    outline:none;
-                    background:transparent;
-                "
-            >
-        </div>
-
-        <!-- 2026 Discount -->
-        <div style="margin-bottom:15px;">
-            <label style="font-size:16px;">
-                2026 Discount 
-            </label>
-
-            <input
-                type="number"
-                id="discount2026"
-                placeholder="Enter 2026 Discount %"
-                min="1"
-                style="
-                    width:245px;
-                    border:none;
-                    border-bottom:1px solid #999;
-                    font-size:15px;
-                    padding:10px 0;
-                    outline:none;
-                    background:transparent;
-                "
-            >
-        </div>
-
-        <!-- 2026 Kit Discount -->
-        <div style="margin-bottom:15px;">
-            <label style="font-size:16px;">
-                2026 Kit Discount 
-            </label>
-
-            <input
-                type="number"
-                id="discount2026Kit"
-                placeholder="Enter 2026 Kit Discount %"
-                min="1"
-                style="
-                    width:245px;
-                    border:none;
-                    border-bottom:1px solid #999;
-                    font-size:15px;
-                    padding:10px 0;
-                    outline:none;
-                    background:transparent;
-                "
-            >
-        </div>
-
+        <input
+            type="number"
+            id="discount2025"
+            placeholder="Enter 2025 Discount %"
+            min="1"
+            style="
+                width:250px;
+                border:none;
+                border-bottom:1px solid #999;
+                font-size:17px;
+                padding:4px 0;
+                outline:none;
+                background:transparent;
+            "
+        >
     </div>
-    <!-- END discountOptions -->
+
+    <!-- 2026 Discount -->
+    <div style="margin-bottom:8px;">
+        <label
+            style="
+                font-size:17px;
+                display:block;
+                margin-bottom:2px;
+            "
+        >
+            2026 Discount
+        </label>
+
+        <input
+            type="number"
+            id="discount2026"
+            placeholder="Enter 2026 Discount %"
+            min="1"
+            style="
+                width:250px;
+                border:none;
+                border-bottom:1px solid #999;
+                font-size:17px;
+                padding:4px 0;
+                outline:none;
+                background:transparent;
+            "
+        >
+    </div>
+
+    <!-- 2026 Kit Discount -->
+    <div style="margin-bottom:8px;">
+        <label
+            style="
+                font-size:17px;
+                display:block;
+                margin-bottom:2px;
+            "
+        >
+            2026 Kit Discount
+        </label>
+
+        <input
+            type="number"
+            id="discount2026Kit"
+            placeholder="Enter 2026 Kit Discount %"
+            min="1"
+            style="
+                width:250px;
+                border:none;
+                border-bottom:1px solid #999;
+                font-size:17px;
+                padding:4px 0;
+                outline:none;
+                background:transparent;
+            "
+        >
+    </div>
+
+</div>
+<!-- END discountOptions -->
 
     <!-- FOC -->
     <div class="billing-option">
