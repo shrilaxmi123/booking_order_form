@@ -263,6 +263,14 @@ button{
 
 }
 
+@media screen and (max-width:768px){
+
+    .clear-form-link{
+        margin-left:15px;
+    }
+
+}
+
 /* =========================
    EXTRA SMALL DEVICES
 ========================= */
@@ -886,6 +894,7 @@ button{
     </button>
 
     <span 
+        class="clear-form-link"
         onclick="
             document.getElementById('bookingForm').reset();
             hideDiscountOptions();
@@ -960,6 +969,11 @@ function hideDiscountOptions() {
         "discountOptions"
     ).style.display = "none";
 
+    document.getElementById("discount2024").value = "";
+    document.getElementById("discount2025").value = "";
+    document.getElementById("discount2026").value = "";
+    document.getElementById("discount2026Kit").value = "";
+
 }
 
 /* =========================
@@ -979,6 +993,8 @@ function hideAmountBox() {
     document.getElementById(
         "amountBox"
     ).style.display = "none";
+
+    document.getElementById("amount").value = "";
 
 }
 
