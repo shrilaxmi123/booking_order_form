@@ -79,6 +79,7 @@ label{
 
 /* INPUTS */
 input[type="text"],
+input[type="email"],
 textarea{
     width:50%;
     border:none;
@@ -223,6 +224,7 @@ button{
     }
 
     input[type="text"],
+    input[type="email"],
     input[type="number"],
     textarea{
         width:100% !important;
@@ -442,6 +444,23 @@ button{
         </div>
 
        
+
+    </div>
+
+    <!-- PACKAGE EMAIL -->
+    <div class="card">
+
+        <label>
+            Your Email ID
+            <span class="required">*</span>
+        </label>
+
+        <input
+            type="email"
+            id="packageEmail"
+            placeholder="Enter your email id"
+            class="package-required"
+        >
 
     </div>
 
@@ -710,7 +729,7 @@ button{
                 border:none;
                 border-bottom:1px solid #999;
                 font-size:17px;
-                padding:7px 0;
+                padding:7px ;
                 outline:none;
                 background:transparent;
             "
@@ -782,6 +801,23 @@ button{
 
     </div>
 
+
+    <!-- SELECTIVE EMAIL -->
+    <div class="card">
+
+        <label>
+            Your Email ID
+            <span class="required">*</span>
+        </label>
+
+        <input
+            type="email"
+            id="selectiveEmail"
+            placeholder="Enter your email id"
+            class="selective-required"
+        >
+
+    </div>
 
     <!-- BOOK NAME -->
    <div class="card" id="bookSection">
@@ -1152,6 +1188,11 @@ window.addEventListener("DOMContentLoaded", function () {
 
          customer:
                 document.getElementById("customerName").value,
+
+            yourEmail:
+                document.getElementById("packageSection").style.display === "block"
+                ? document.getElementById("packageEmail").value
+                : document.getElementById("selectiveEmail").value,
 
             year: Array.from(
                 document.querySelectorAll(
